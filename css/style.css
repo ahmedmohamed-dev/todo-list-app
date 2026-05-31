@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: "Tajawal", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.tasks-table {
+    width: 70%;
+    max-width: 900px;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 15px;
+
+    background-color: #4f46e5;
+    color: white;
+}
+
+.add-btn {
+    position: absolute;
+    left: 15px;
+}
+
+.tasks-container {
+    padding: 20px;
+}
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 5px rgba(168, 168, 168, 0.3);
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    line-height: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+
+    transition: 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.done {
+    background-color: #dcfce7;
+}
+
+.task-info {
+    width: 70%;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.delete-btn {
+    color: white;
+    background-color: #dc2626;
+}
+
+.complete-btn {
+    color: white;
+    background-color: #16a34a;
+}
+
+.cancel-btn {
+    color: white;
+    background-color: #f59e0b;
+}
+
+.edit-btn {
+    color: white;
+    background-color: #2563eb;
+}
+
+.task-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .tasks-table {
+        width: 95%;
+    }
+
+    .task {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .task-info {
+        width: 100%;
+    }
+}
